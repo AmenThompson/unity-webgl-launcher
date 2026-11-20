@@ -25,7 +25,7 @@
 
 - **场景空白或出现 404**：展开运行日志并检查浏览器控制台，确认导出目录完整。若模板使用 `/Build/` 这类根路径，请检查 Unity 构建模板是否支持相对路径。
 - **多线程场景加载失败**：确认 Unity 项目启用了 WebGL 线程，再打开启动器的多线程选项。检查外部资源的跨源响应头。
-- **下载校验**：下载同一版本的 `SHA256SUMS.txt`，在下载目录运行 `Get-FileHash -Algorithm SHA256 .\Unity-WebGL-Launcher_1.0.0_x64.exe`，比对 SHA-256。
+- **下载校验**：下载同一版本的 `SHA256SUMS.txt`，在下载目录运行 `Get-FileHash -Algorithm SHA256 .\Unity-WebGL-Launcher_0.1.0_x64.exe`，比对 SHA-256。
 
 ## 从源码构建
 
@@ -42,7 +42,7 @@ cargo test --locked --manifest-path src-tauri/Cargo.toml
 npm run build-release
 ```
 
-本地开发使用 `npm run tauri-dev`。发布脚本会在 `release/<版本>/` 生成便携 EXE 和 SHA-256 校验文件。
+本地开发使用 `npm run tauri-dev`。发布脚本会在 `release/<版本>/` 生成便携 EXE 和 SHA-256 校验文件。首次发布及后续发版步骤见 [GitHub 新项目发布指南](<GitHub 新项目发布指南.md>)。
 
 提交问题时，请附上应用版本、Unity 版本、WebGL 发布配置与必要的日志。欢迎通过 Pull Request 提交改进。
 
