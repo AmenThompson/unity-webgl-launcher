@@ -1,0 +1,102 @@
+:root {
+  color-scheme: light;
+  font-family: 'Segoe UI', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+  font-synthesis: none;
+  --text: #23243a;
+  --muted: #606276;
+  --accent: #4d48c9;
+  --focus: #5652d9;
+  --primary: #5652d9;
+  --primary-hover: #4641c0;
+  --border: #e7e7f0;
+  --border-soft: #ececf3;
+  --surface-inset: #f7f7fb;
+  --surface-field: #fff;
+  --accent-wash: #eeedff;
+  --footer-gap: 14px;
+  --project-heading-height: 34px;
+  --project-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  --inspector: #f7f6ff;
+  --mint: #58c8aa;
+  --mint-text: #13624d;
+  --mono: 'Cascadia Mono', Consolas, 'Microsoft YaHei UI', monospace;
+  background: #fff;
+  color: var(--text);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  min-width: 300px;
+  margin: 0;
+  font-size: 14px;
+  background: #fff;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+.project-action.n-button {
+  flex: none;
+  width: 44px;
+  height: 44px;
+}
+.panel {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-field);
+}
+.page-panel {
+  flex: 1 0 auto;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 20px;
+}
+.section-header h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 650;
+}
+.section-icon {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--accent);
+  background: var(--accent-wash);
+}
+.section-icon svg {
+  width: 17px;
+  height: 17px;
+}
+.clipboard-capture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+.mono {
+  font-family: var(--mono);
+}
+@media (max-width: 600px) {
+  .panel {
+    padding: 16px;
+  }
+}

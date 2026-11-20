@@ -1,0 +1,6 @@
+{
+  "identifier": "desktop-main",
+  "description": "本地控制台选择发布目录或入口文件",
+  "windows": ["main"],
+  "permissions": ["dialog:allow-open"]
+}

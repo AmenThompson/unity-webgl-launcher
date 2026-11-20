@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Unity WebGL 启动器图标</title>
+  <desc id="desc">由蓝青渐变的开放式六边形、电路节点和立体播放符号组成的透明底图标</desc>
+  <defs>
+    <linearGradient id="upper" x1="38" y1="88" x2="193" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#165ABA"/>
+      <stop offset=".53" stop-color="#3878DD"/>
+      <stop offset="1" stop-color="#0BA9B5"/>
+    </linearGradient>
+    <linearGradient id="lower" x1="66" y1="183" x2="214" y2="119" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2559C6"/>
+      <stop offset=".58" stop-color="#0C7FBF"/>
+      <stop offset="1" stop-color="#069EAE"/>
+    </linearGradient>
+    <linearGradient id="play" x1="99" y1="169" x2="163" y2="103" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#215BCC"/>
+      <stop offset=".51" stop-color="#168DD9"/>
+      <stop offset="1" stop-color="#22C7C4"/>
+    </linearGradient>
+    <linearGradient id="facet" x1="95" y1="89" x2="156" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F0FA"/>
+      <stop offset="1" stop-color="#4CC8EC"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M41 135V84a9 9 0 0 1 4.5-7.8l77.8-45a9.3 9.3 0 0 1 9.4 0L192 65" stroke="url(#upper)" stroke-width="13"/>
+    <path d="M215 120v52a9 9 0 0 1-4.5 7.8l-77.8 45a9.3 9.3 0 0 1-9.4 0L64 191" stroke="url(#lower)" stroke-width="13"/>
+    <path d="M57 115V91l34-19m74 112 34-19v-25" stroke="#3F9FCC" stroke-width="4" opacity=".72"/>
+    <path d="m192 65 14 8m-142 118-14-8" stroke="#177CAB" stroke-width="6"/>
+    <circle cx="214" cy="78" r="8.5" stroke="#078C9E" stroke-width="5.5"/>
+    <circle cx="42" cy="178" r="8.5" stroke="#285FBE" stroke-width="5.5"/>
+  </g>
+  <path d="M94 88c0-5.6 6.1-9.1 11-6.2l68.3 39.9a7.3 7.3 0 0 1 0 12.6L105 174.2c-4.9 2.9-11-.6-11-6.2Z" fill="url(#play)" stroke="#1B5CA6" stroke-width="3.6" stroke-linejoin="round"/>
+  <path d="m101 87 64 37-45 2-19-31Z" fill="url(#facet)" opacity=".82"/>
+  <path d="m101 163 19-37 45-2-64 45Z" fill="#174DB5" opacity=".29"/>
+</svg>

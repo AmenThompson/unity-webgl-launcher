@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WebGL 交互自检</title>
+  <style>
+    :root { color-scheme: dark; font: 16px system-ui, 'Microsoft YaHei', sans-serif; }
+    body { margin: 0; background: #0d1420; color: #e4eefc; }
+    main { max-width: 850px; margin: 36px auto; padding: 0 24px; }
+    h1 { margin-bottom: 10px; }
+    p { line-height: 1.65; color: #afc2d9; }
+    canvas { display: block; width: 100%; height: min(56vh, 510px); border: 1px solid #2a405c; border-radius: 12px; touch-action: none; }
+    canvas:fullscreen { width: 100%; height: 100%; border: 0; border-radius: 0; }
+    button { font: inherit; color: white; background: #245ac1; border: 0; border-radius: 7px; padding: 8px 16px; cursor: pointer; }
+    #status { min-height: 26px; }
+  </style>
+  <script src="Build/diagnostic.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>WebGL 交互自检</h1>
+    <p>拖动三角形或按方向键观察旋转。此页面用于检查当前浏览器的 WebGL 渲染和输入。</p>
+    <canvas id="scene" tabindex="0" aria-label="WebGL 交互画布"></canvas>
+    <p id="status" role="status">正在初始化 WebGL…</p>
+    <button id="fullscreen" type="button">全屏</button>
+  </main>
+</body>
+</html>
