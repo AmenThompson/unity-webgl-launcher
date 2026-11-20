@@ -104,7 +104,7 @@ gh release create $tag $exe.FullName $checksum --repo $repo --target $releaseCom
 
 ## 本次发布实例
 
-Unity WebGL 启动器按 `0.1.0` 编号重新打包，同步了 npm、Tauri、Cargo 和对应锁文件的版本。源码和中文说明位于 `main`，Windows x64 EXE 和 SHA-256 清单位于 `v0.1.0`。GitHub 最新下载入口指向 `v0.1.0`，此前的 `v1.0.0` 保留在发行历史中。 [源码仓库](https://github.com/AmenThompson/unity-webgl-launcher) · [发行实例](https://github.com/AmenThompson/unity-webgl-launcher/releases/tag/v0.1.0)
+Unity WebGL 启动器按 `0.1.0` 编号重新打包，同步了 npm、Tauri、Cargo 和对应锁文件的版本。源码和中文说明位于 `main`，Windows x64 EXE 和 SHA-256 清单位于 `v0.1.0`。GitHub 发行记录从 `v0.1.0` 开始，最新下载入口也指向该版本。 [源码仓库](https://github.com/AmenThompson/unity-webgl-launcher) · [发行实例](https://github.com/AmenThompson/unity-webgl-launcher/releases/tag/v0.1.0)
 
 下次可以把这句话连同指南发给助手。
 
